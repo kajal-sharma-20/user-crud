@@ -61,7 +61,11 @@ function Createform() {
       setEditId(null);
     } catch (err) {
       console.log("Submit error:", err);
+      if (err.response && err.response.data && err.response.data.message) {
+      toast.error(err.response.data.message); 
+    } else {
       toast.error("Server error during submission");
+    }
     }
   };
 

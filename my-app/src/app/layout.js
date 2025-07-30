@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
-        <ToastContainer position="top-right" autoClose={1000} hideProgressBar={true}/>
+        <ToastContainer position="top-right" autoClose={1000} hideProgressBar={true} theme="dark"/>
       </body>
     </html>
   );
